@@ -11,16 +11,11 @@ private:
     String accountSid;
     String authToken;
     const String callUrl = "http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient";
-    
 
 public:
     NBY_Twilio(String accountSid,String authToken);
     int makeCall(String fromNumber,String toNumber);
     int makeSms(String fromNumber,String toNumber,String messages);
 };
-
-
-
-
 
 #endif
